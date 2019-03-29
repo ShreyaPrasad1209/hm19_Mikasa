@@ -1,0 +1,19 @@
+#eleven {
+
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;  
+    width: 50%;
+    height: 20%;
+
+}
+.content p {
+    font-family: "Poppins", sans-serif;
+    justify-content: right; 
+    text-align: center;
+    }
+    
+
+p{
+    color: magenta;
+}
