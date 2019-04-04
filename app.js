@@ -62,6 +62,7 @@ app.post('/auth/register', function(request, response) {                     //h
 	var email_id = request.body.email_id;
 	if (username && password) {
 		connection.query('INSERT into user (first_name,last_name,username,email_id,password) VALUES();', function(error, results, fields) {
+			console.log(error,results,fields)
 			if (results.length > 0) {
 				request.session.loggedin = true;
 				request.session.username = username;
@@ -76,6 +77,7 @@ app.post('/auth/register', function(request, response) {                     //h
 		response.send('Please enter Username and Password!');
 		response.end();
 	}
+	
 });
 
 
